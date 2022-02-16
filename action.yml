@@ -1,0 +1,21 @@
+name: Bug Aimbot
+description: This is an action that calls locus to help find bug inducing commits
+author: Justin Ruffin, Rohan Repala, Dhruv Sapra, Bharath Mahendran
+branding:
+  icon: 'crosshair'
+  color: 'green'
+          
+runs:
+  using: "composite"
+  steps:
+    - id: call-api
+      run: |
+        echo "::set-output name=responseInfo::$(curl -X POST http://104.131.188.205:5000/locus -H "Content-Type: application/json" -d "{ \"title\":\"${{ github.event.issue.title }}\", \"body\":\"${{ github.event.issue.body }}\", \"url\":\"${{ github.repositoryUrl}}\" }")"
+      shell: bash
+    - id: comment-issue
+      uses: peter-evans/create-or-update-comment@v1
+      with: 
+        issue-number: ${{ github.event.issue.number }}
+        body: |
+          Locus suggests these are the commits that most likely caused the bug:
+          ${{ steps.call-api.outputs.responseInfo }}
