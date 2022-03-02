@@ -1,6 +1,6 @@
 # Bug AimBot
 
-This action helps developers find bug incuding commits using a tool known as Locus\n
+This action helps developers find bug incuding commits using a tool known as Locus <br />
 Locus: LOcates bugs from software Change hUnkS
 
 ## Usage
