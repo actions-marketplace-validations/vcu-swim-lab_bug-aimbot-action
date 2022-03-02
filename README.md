@@ -31,5 +31,5 @@ Token corpora are created using the issue title and body as a bug report. Locus 
 
 ## Limitations
 
-* If a quotation mark is used in either the title or the body of the issue, it must have an accompanying quotation mark or the action will not work.
+* If there is a quotation mark used in either the title or the body of the issue, it must have an accompanying quotation mark or the action will not work.
 * The action relies on information from the title and body of issues, therefore it must be used as shown above.
