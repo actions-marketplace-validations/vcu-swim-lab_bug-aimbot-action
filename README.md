@@ -21,7 +21,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: vcu-swim-lab/bug-aimbot-action@v1
+      - uses: vcu-swim-lab/bug-aimbot-action@v1.0.1
 ```
 
 ## How it works
