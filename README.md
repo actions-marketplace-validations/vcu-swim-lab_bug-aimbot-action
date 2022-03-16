@@ -37,4 +37,5 @@ Token corpora are created using the issue title and body as a bug report. Locus 
 ## Contributors
 
 * Justin Ruffin
-* 
+* Bharath Mahendran
+* Dhruv Sapra
