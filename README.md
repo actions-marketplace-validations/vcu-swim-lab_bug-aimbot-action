@@ -1,7 +1,8 @@
 # Bug AimBot
 
 This action helps developers find bug incuding commits using a tool known as Locus <br />
-Locus: LOcates bugs from software Change hUnkS
+Locus: LOcates bugs from software Change hUnkS <br />
+Locus source code: https://github.com/justinwm/Locus/
 
 ## Usage
 
@@ -39,3 +40,4 @@ Token corpora are created using the issue title and body as a bug report. Locus 
 * Justin Ruffin
 * Bharath Mahendran
 * Dhruv Sapra
+* Rohan Repala
